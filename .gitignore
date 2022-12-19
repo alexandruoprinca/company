@@ -1,0 +1,10 @@
+#While the resulting .exe will not be working on other operating systems, the code does not contain
+#Windows-specific code so it will also compile on Linux and Macos (i wrote this on mac actually)
+#Because of this, git offers a .gitignore file that allows developers to "ignore" some files.
+#Some good examples are __pycache__, node_modules. Please keep in mind that while __pycache__ and node_modules 
+#are "certain" names and we know that they won't change, the c++ "build" folder can have literally any name.
+#I just decided to name it build.
+build/*
+#If you make special settings just for this project, a hidden .vscode folder will be created. 
+#I added it here so we don't upload madness on git
+.vscode/*
